@@ -31,3 +31,20 @@ body {
     text-wrap: balance;
   }
 }
+
+.colorDiv {
+  width: 200px;
+  height: 200px;
+}
+
+.colorBlock_container {
+  display: flex;
+  flex-wrap: wrap;
+  .colorBlock {
+    padding: 10px;
+    text-align: center;
+    &:hover {
+      cursor: pointer
+    }
+  }
+}

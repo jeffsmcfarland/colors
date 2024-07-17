@@ -35,6 +35,10 @@ body {
 .colorDiv {
   width: 200px;
   height: 200px;
+  border-radius: 100px;
+  line-height: 200px;
+  text-align: center;
+  border: 1px solid white;
 }
 
 .colorBlock_container {
@@ -47,4 +51,21 @@ body {
       cursor: pointer
     }
   }
+}
+
+.invertButton {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 20px auto;
+}
+
+input {
+  color: white;
+  margin: 10px auto;
+  border: 2px solid white;
+  outline: none;
+  padding: 5px 10px;
+  background: black;
+  border-radius: 20px;
 }

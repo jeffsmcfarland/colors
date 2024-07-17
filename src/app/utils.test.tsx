@@ -28,7 +28,7 @@ describe('padZero', () => {
 describe('filterAlphal', () => {
   test('50% opacity should append 80', () => {
     const color = `#00000080`;
-    const result = filterAlpha('#000000')(50);
+    const result = filterAlpha('#000000', 50);
     expect(result).toBe(color);
   });
 });

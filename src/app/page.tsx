@@ -27,7 +27,7 @@ function handleInvert() {
 }
 
 function handleOpacity(value: number){
-  let newColor = filterAlpha(currentColor)(value);
+  let newColor = filterAlpha(currentColor, value);
   setOpacity(value);
   setCurrentColor(newColor);
 }

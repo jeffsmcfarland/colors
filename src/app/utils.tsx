@@ -34,14 +34,12 @@ export function padZero(str: string | number, len: number = 2):any {
     return (zeros + str).slice(-len);
 }
 
-export function filterAlpha(hex: string) {
+export function filterAlpha(hex: string, percentage: number): string {
  let validatedHex = validateHex(hex);
-  return (percentage: number): string => {
     const decimal = `0${Math.round(255 * (percentage / 100)).toString(16)}`.slice(-2).toUpperCase();
     if (decimal === 'FF') {
         return '#' + validatedHex;
     }
     return '#' + validatedHex + decimal;
-  };
 }
 

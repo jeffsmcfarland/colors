@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Colors
+
+A simple color library written in nextJs/Typescript for reversing colors and changing opacity - select a color to reverse and filter opacity, and retrieve the hex value.
+
+Currently uses a public api - results are limited to 100.  Edit line 48 of page.tsx to retrieve the entire list of over 3000 colors.
+
 ## Getting Started
 
 First, run the development server:

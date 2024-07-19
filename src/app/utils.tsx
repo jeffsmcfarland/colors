@@ -13,6 +13,7 @@ export function invertColor(hex:string):string {
 }
 
 export function validateHex(hex: string):string {
+    // remove hash
     if (hex.indexOf('#') === 0) {
         hex = hex.slice(1);
     }
@@ -20,10 +21,11 @@ export function validateHex(hex: string):string {
     if (hex.length === 3) {
         hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
     }
+    // reset to 6 char hex to remove opacity values
     if (hex.length >= 8) {
         hex = hex.slice(0, 6);
     }
-    if (hex.length !== 6 && hex.length !== 8) {
+    if (hex.length !== 6) {
         throw new Error('Invalid HEX color.');
     }
     return hex;
